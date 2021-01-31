@@ -1,6 +1,7 @@
 <%@page import="edu.hebeu.entity.Employee"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.text.*" %>
 <% String path = request.getContextPath(); %>
 <!DOCTYPE html>
 <html>
@@ -60,7 +61,15 @@
     <script src="js/plugins/layer/layer.min.js"></script>
    	<script>
    	$("a").click(function () {
-   		parent.layer.alert('签到成功！')
+        var date = new Date();
+        var time = date.getHours();
+        if(time > 22){
+            parent.layer.alert('签到时间已过，请明日再签！');
+        }else if(time < 8){
+            parent.layer.alert('上班时间未到，请稍后签到！');
+        }else{
+            parent.layer.alert('签到成功！');
+        }
 	});
    	</script>
 </body>
