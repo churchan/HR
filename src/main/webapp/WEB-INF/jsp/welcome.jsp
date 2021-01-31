@@ -60,7 +60,6 @@
     <script src="js/plugins/layer/layer.min.js"></script>
    	<script>
    	$("a").click(function () {
-   	    var date = new Date();
    		parent.layer.alert('签到成功！')
 	});
    	</script>
