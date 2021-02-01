@@ -42,9 +42,7 @@
 				</form>
 			</div>
 		</div>
-		<div class="signup-footer">
-			<div class="pull-left">&copy; CDIO</div>
-		</div>
+
 	</div>
 </body>
 

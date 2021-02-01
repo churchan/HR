@@ -10,7 +10,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HR医院 - 退休员工列表</title>
+	<title>HR医院 - 全体员工列表</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
@@ -31,7 +31,7 @@
 			<div class="col-sm-12">
 				<div class="ibox float-e-margins">
 					<div class="ibox-title">
-						<h5>退休员工列表</h5>
+						<h5>全体员工列表</h5>
 					</div>
 					<div class="ibox-content">
 						<table class="table table-striped table-bordered table-hover dataTables-example">
@@ -67,7 +67,7 @@
 								<%
 									String intime = MTimeUtil.dateFormat(history.getInTime());
 									String outtime = MTimeUtil.dateFormat(history.getOutTime());
-									if(outtime == null) outtime = ""; 
+									if(outtime == null) outtime = "";
 								%>
 									<td><%=intime %></td>
 									<td><%=outtime %></td>
@@ -99,9 +99,9 @@
 	<script>
     $(document).ready(function () {
         $('.dataTables-example').dataTable();
-        
+
         var oTable = $('#editable').dataTable();
-        
+
         oTable.$('td').editable('../example_ajax.php', {
             "callback": function (sValue, y) {
                 var aPos = oTable.fnGetPosition(this);
