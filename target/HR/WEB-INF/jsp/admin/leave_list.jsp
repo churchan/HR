@@ -23,7 +23,7 @@
 		rel="stylesheet">
 	<link href="<%=path %>/css/animate.css" rel="stylesheet">
 	<link href="<%=path %>/css/style.css?v=4.1.0" rel="stylesheet">
-	
+
 	<link rel="stylesheet" type="text/css" href="<%=path %>/dist/sweetalert.css">
 </head>
 <body class="gray-bg">
@@ -59,7 +59,7 @@
 									<td><%=leave.getEmployee().getName() %></td>
 								<%
 									String starttime = MTimeUtil.dateFormat(leave.getStartTime());
-									String endtime = MTimeUtil.dateFormat(leave.getStartTime());
+									String endtime = MTimeUtil.dateFormat(leave.getEndTime());
 								%>
 									<td><%=starttime %></td>
 									<td><%=endtime %></td>
@@ -78,7 +78,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- 全局js -->
 	<script src="<%=path %>/js/jquery.min.js?v=2.1.4"></script>
 	<script src="<%=path %>/js/bootstrap.min.js?v=3.3.6"></script>
@@ -96,9 +96,9 @@
     <script>
        $(document).ready(function () {
            $('.dataTables-example').dataTable();
-           
+
            var oTable = $('#editable').dataTable();
-           
+
            oTable.$('td').editable('../example_ajax.php', {
                "callback": function (sValue, y) {
                    var aPos = oTable.fnGetPosition(this);

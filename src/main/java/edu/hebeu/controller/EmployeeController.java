@@ -36,6 +36,11 @@ public class EmployeeController {
 	@Autowired
 	private HistoryService historyService;
 
+	@RequestMapping("/homePage.do")
+	public String toHomePage(){
+		return "homePage";
+	}
+
 	@RequestMapping("/login.do")
 	public String toLogin(){
 		return "login";

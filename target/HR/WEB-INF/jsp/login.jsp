@@ -21,7 +21,7 @@
         if (window.top !== window.self) {
             window.top.location = window.location;
         }
-    </script>
+    </script>i
 </head>
 <body class="signin">
 	<div class="signinpanel">
@@ -37,7 +37,7 @@
 					<input type="text" class="form-control uname" placeholder="用户名" name="employeeNumber" id="employeeNumber"/>
 					<input type="password" class="form-control pword m-b" placeholder="密码" name="password" id="password"/>
 					<p></p>
-					<a href="">忘记密码了？</a>
+					<a href="">忘记密码</a>
 					<button class="btn btn-success btn-block" type="submit">登录</button>
 				</form>
 			</div>
