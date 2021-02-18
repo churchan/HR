@@ -12,7 +12,7 @@
 	<title>HR医院人事管理系统 - 主页</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	
+
 	<style type="text/css">
 	#line-chart {
 		height: 300px;
@@ -21,11 +21,11 @@
 		margin-top: 1em;
 	}
 	</style>
-	
+
 	<!--[if lt IE 9]>
     	<meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
-    
+
 	<link rel="shortcut icon" href="favicon.ico">
 	<link href="<%=path %>/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
 	<link href="<%=path %>/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
@@ -44,9 +44,9 @@
 				<ul class="nav" id="side-menu">
 					<li class="nav-header">
 						<div class="dropdown profile-element">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
-								<span class="clear"> 
-									<span class="block m-t-xs" style="font-size: 20px;"> 
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<span class="clear">
+									<span class="block m-t-xs" style="font-size: 20px;">
 										<i class="fa fa-heartbeat"></i>
 										<strong class="font-bold">&nbsp;HR医院</strong>
 									</span>
@@ -55,7 +55,7 @@
 						</div>
 						<div class="logo-element">HR</div>
 					</li>
-					
+
 					<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
 						<span class="ng-scope">个人</span>
 					</li>
@@ -65,8 +65,8 @@
                         </a>
                     </li>
                    <% Employee employee = (Employee)session.getAttribute("loged"); %>
-					<li><a href="graph_metrics.html"> 
-							<i class="fa fa fa-newspaper-o"></i> 
+					<li><a href="graph_metrics.html">
+							<i class="fa fa fa-newspaper-o"></i>
 							<span class="nav-label">个人信息</span>
 							<span class="fa arrow"></span>
 						</a>
@@ -89,7 +89,7 @@
 						<span class="ng-scope">员工</span>
 					</li>
 					<li><a href="graph_metrics.html">
-							<i class="fa fa fa-user-md"></i> 
+							<i class="fa fa fa-user-md"></i>
 							<span class="nav-label">员工管理</span>
 							<span class="fa arrow"></span>
 						</a>
@@ -121,7 +121,7 @@
 			</div>
 		</nav>
 		<!--左侧导航结束-->
-		
+
 		<!--右侧部分开始-->
 		<div id="page-wrapper" class="gray-bg dashbard-1">
             <div class="row border-bottom">
@@ -143,7 +143,7 @@
                                 <li><a href="<%=path %>/employee/oneself/<%=employee.getId() %>/detial.do" target="J_iframe">我的账户</a>
                                 </li>
                                 <li class="divider"></li>
-                                <li><a href="<%=path %>/employee/login.do">退出登录</a>
+                                <li><a href="<%=path %>/employee/homePage.do">退出登录</a>
                                 </li>
                                 <li class="divider"></li>
                                 <li><a href="<%=path %>/employee/logout.do">注销登录</a>
@@ -159,18 +159,18 @@
         </div>
 		<!--右侧部分结束-->
 	</div>
-	
+
 	<!-- 全局js -->
 	<script src="<%=path %>/js/jquery.min.js?v=2.1.4"></script>
 	<script src="<%=path %>/js/bootstrap.min.js?v=3.3.6"></script>
 	<script src="<%=path %>/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 	<script src="<%=path %>/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="<%=path %>/js/plugins/layer/layer.min.js"></script>
-	
+
 	<!-- 自定义js -->
 	<script src="<%=path %>/js/hAdmin.js?v=4.1.0"></script>
 	<script src="<%=path %>/js/index.js" type="text/javascript"></script>
-	
+
 	<!-- 第三方插件 -->
 	<script src="<%=path %>/js/plugins/pace/pace.min.js"></script>
 </body>

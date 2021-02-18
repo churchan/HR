@@ -63,7 +63,7 @@ public class EmployeeController {
 				return "admin/index4";
 			}
 		}else{
-			return "login";
+			return "myLogin";
 		}
 	}
 
@@ -166,7 +166,7 @@ public class EmployeeController {
 	@RequestMapping("/logout.do")
 	public String logout(HttpSession session){
 		session.removeAttribute("loged");
-		return "login";
+		return "myLogin";
 	}
 
 }
