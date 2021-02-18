@@ -7936,3 +7936,106 @@ body.skin-3 {
     font-size: 0;
     background-color: #131e26;
 }
+
+<!--医疗主题Start-->
+
+.medilife-btn {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #006cff;
+    height: 45px;
+    padding: 0 55px 0 30px;
+    line-height: 42px;
+    font-size: 14px;
+    min-width: 140px;
+    border-radius: 0;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+.medilife-btn span {
+    width: 40px;
+    height: 45px;
+    background-color: #081f3e;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+.medilife-btn:hover, .medilife-btn:focus {
+    background-color: #081f3e;
+    color: #ffffff; }
+.medilife-btn:hover span, .medilife-btn:focus span {
+    color: #ffffff;
+    background-color: #006cff; }
+.medilife-btn.btn-2 {
+    background-color: #081f3e;
+    color: #ffffff; }
+.medilife-btn.btn-2 span {
+    color: #ffffff;
+    background-color: #006cff; }
+.medilife-btn.btn-2:hover, .medilife-btn.btn-2:focus {
+    background-color: #006cff;
+    color: #ffffff; }
+.medilife-btn.btn-2:hover span, .medilife-btn.btn-2:focus span {
+    color: #ffffff;
+    background-color: #081f3e; }
+.medilife-btn.btn-3 {
+    background-color: #ffffff;
+    color: #081f3e;
+    border: 2px solid;
+    border-color: #006cff; }
+.medilife-btn.btn-3 span {
+    top: -2px;
+    right: -2px; }
+.medilife-btn.btn-4 {
+    background-color: #ffffff;
+    color: #081f3e;
+    border: 2px solid;
+    border-color: #006cff; }
+.medilife-btn.btn-4 span {
+    background-color: #006cff;
+    top: -2px;
+    right: -2px; }
+
+
+.medilife-appoint-btn {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #ff0000;
+    height: 50px;
+    padding: 0 15px;
+    line-height: 50px;
+    font-size: 14px;
+    min-width: 140px;
+    border-radius: 0;
+    font-weight: 500;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-transform: uppercase;
+    box-shadow: none; }
+.medilife-appoint-btn span {
+    font-weight: 700; }
+.medilife-appoint-btn:hover, .medilife-appoint-btn:focus {
+    color: #006cff;
+    background-color: #ffffff;
+    box-shadow: none;
+    font-weight: 500; }
+.medilife-appoint-btn:hover span, .medilife-appoint-btn:focus span {
+    font-weight: 700; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .medilife-appoint-btn {
+        margin-top: 30px; } }
+@media only screen and (max-width: 767px) {
+    .medilife-appoint-btn {
+        margin-top: 10px; } }
+
+
+
+
+

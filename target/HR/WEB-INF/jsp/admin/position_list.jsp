@@ -23,6 +23,76 @@
 	<link href="<%=path %>/css/animate.css" rel="stylesheet">
 	<link href="<%=path %>/css/style.css?v=4.1.0" rel="stylesheet">
 
+
+
+	<!--医疗主题按钮自添加 Start-->
+	<style type="text/css">
+		.medilife-btn {
+			display: inline-block;
+			color: #ffffff;
+			background-color: #006cff;
+			height: 45px;
+			padding: 0 55px 0 30px;
+			line-height: 42px;
+			font-size: 14px;
+			min-width: 140px;
+			border-radius: 0;
+			font-weight: 700;
+			position: relative;
+			z-index: 1;
+			-webkit-transition-duration: 500ms;
+			transition-duration: 500ms; }
+		.medilife-btn span {
+			width: 40px;
+			height: 45px;
+			background-color: #081f3e;
+			display: inline-block;
+			position: absolute;
+			top: -1px;
+			right: -1px;
+			font-size: 24px;
+			color: #ffffff;
+			font-weight: 500;
+			-webkit-transition-duration: 500ms;
+			transition-duration: 500ms; }
+		.medilife-btn:hover, .medilife-btn:focus {
+			background-color: #081f3e;
+			color: #ffffff; }
+		.medilife-btn:hover span, .medilife-btn:focus span {
+			color: #ffffff;
+			background-color: #006cff; }
+		.medilife-btn.btn-2 {
+			background-color: #081f3e;
+			color: #ffffff; }
+		.medilife-btn.btn-2 span {
+			color: #ffffff;
+			background-color: #006cff; }
+		.medilife-btn.btn-2:hover, .medilife-btn.btn-2:focus {
+			background-color: #006cff;
+			color: #ffffff; }
+		.medilife-btn.btn-2:hover span, .medilife-btn.btn-2:focus span {
+			color: #ffffff;
+			background-color: #081f3e; }
+		.medilife-btn.btn-3 {
+			background-color: #ffffff;
+			color: #081f3e;
+			border: 2px solid;
+			border-color: #006cff; }
+		.medilife-btn.btn-3 span {
+			top: -2px;
+			right: -2px; }
+		.medilife-btn.btn-4 {
+			background-color: #ffffff;
+			color: #081f3e;
+			border: 2px solid;
+			border-color: #006cff; }
+		.medilife-btn.btn-4 span {
+			background-color: #006cff;
+			top: -2px;
+			right: -2px; }
+	</style>
+	<!--医疗主题按钮自添加 End-->
+
 </head>
 <body class="gray-bg">
 	<div class="wrapper wrapper-content animated fadeInRight">
@@ -34,7 +104,7 @@
 					</div>
 					<div class="ibox-content">
 						<div>
-							<a href="<%=path %>/position/toAdd.do" class="btn btn-success">添加职称</a>
+							<a href="<%=path %>/position/toAdd.do" class="btn medilife-btn">添加职称<span>+</span></a>
 						</div>
 						<table class="table table-striped table-bordered table-hover dataTables-example">
 							<thead>
@@ -99,7 +169,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- 全局js -->
 	<script src="<%=path %>/js/jquery.min.js?v=2.1.4"></script>
 	<script src="<%=path %>/js/bootstrap.min.js?v=3.3.6"></script>

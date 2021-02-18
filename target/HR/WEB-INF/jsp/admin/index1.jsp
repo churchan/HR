@@ -47,8 +47,8 @@
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<span class="clear">
 									<span class="block m-t-xs" style="font-size: 20px;">
-										<i class="fa fa-heartbeat"></i>
-										<strong class="font-bold">&nbsp;HR医院</strong>
+										<img src="<%=path%>/extra/img/core-img/logo.png" alt="Logo">
+										<p><span style="color: #0073ff;">天府</span>医院</p>
 									</span>
 								</span>
 							</a>
