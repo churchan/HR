@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.*"%>
-<%@ page import="edu.hebeu.entity.*" %>
+<%@ page import="edu.tfswufe.entity.*" %>
 <% String path = request.getContextPath(); %>
 <!DOCTYPE>
 <html>
@@ -33,11 +33,11 @@
 					</div>
 					<div class="ibox-content">
 						<% Employee employee = (Employee)session.getAttribute("loged");%>
-						<form method="post" class="form-horizontal" id="commentForm" 
+						<form method="post" class="form-horizontal" id="commentForm"
 							action="<%=path %>/leave/add.do?employeeNumber=<%=employee.getEmployeeNumber() %>">
 							<div class="form-group">
 								<label class="col-sm-3 control-label">姓名：</label>
-								
+
 								<div class="col-sm-7">
 									<p class="form-control-static"><%=employee.getName() %></p>
 								</div>
@@ -88,23 +88,23 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- 全局js -->
 	<script src="<%=path %>/js/jquery.min.js?v=2.1.4"></script>
 	<script src="<%=path %>/js/bootstrap.min.js?v=3.3.6"></script>
 	<script src="<%=path %>/js/plugins/jeditable/jquery.jeditable.js"></script>
-	
+
 	<!-- Data Tables -->
 	<script src="<%=path %>/js/plugins/dataTables/jquery.dataTables.js"></script>
 	<script src="<%=path %>/js/plugins/dataTables/dataTables.bootstrap.js"></script>
 
 	<!-- 自定义js -->
 	<script src="<%=path %>/js/content.js?v=1.0.0"></script>
-	
+
 	<!-- 表单验证 -->
 	<script src="<%=path %>/js/plugins/validate/jquery.validate.min.js"></script>
 	<script src="<%=path %>/js/plugins/validate/messages_zh.min.js"></script>
-	
+
 	<!-- layer javascript -->
     <script src="js/plugins/layer/layer.min.js"></script>
 	<script>

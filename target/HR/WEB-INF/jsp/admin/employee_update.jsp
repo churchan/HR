@@ -1,8 +1,8 @@
-<%@page import="edu.hebeu.util.MTimeUtil"%>
+<%@page import="edu.tfswufe.util.MTimeUtil"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.*"%>
-<%@ page import="edu.hebeu.entity.*" %>
+<%@ page import="edu.tfswufe.entity.*" %>
 <% String path = request.getContextPath(); %>
 <!DOCTYPE html>
 <html>
@@ -58,7 +58,7 @@
 								<div class="col-sm-7">
 									<div class="radio i-checks">
                                         <label>
-                                            <input type="radio" value="男" name="gender" 
+                                            <input type="radio" value="男" name="gender"
                                             <%
 												if(employee.getGender().equals("男")){
 											%>
@@ -113,12 +113,12 @@
 								<div class="col-sm-7">
 									<select class="form-control m-b" name="departmentNumber" size="1" required>
 									<option value="">--请选择部门--</option>
-									<% 
-										List<Department> dList = (List<Department>) request.getAttribute("dList"); 
+									<%
+										List<Department> dList = (List<Department>) request.getAttribute("dList");
 										for(Department department : dList){
 									%>
 										<option value="<%=department.getDepartmentNumber() %>"
-										<% 
+										<%
 											if(employee.getDepartmentNumber().equals(department.getDepartmentNumber())){
 										%>
 											selected="selected"
@@ -133,12 +133,12 @@
 								<div class="col-sm-7">
 									<select class="form-control m-b" name="positionNumber" size="1" required>
 										<option value="">--请选择职称--</option>
-										<% 
-											List<Position> pList = (List<Position>) request.getAttribute("pList"); 
+										<%
+											List<Position> pList = (List<Position>) request.getAttribute("pList");
 											for(Position position : pList){
 										%>
 											<option value="<%=position.getPositionNumber() %>"
-											<% 
+											<%
 												if(employee.getPositionNumber().equals(position.getPositionNumber())){
 											%>
 												selected="selected"
@@ -177,7 +177,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- 全局js -->
 	<script src="<%=path %>/js/jquery.min.js?v=2.1.4"></script>
 	<script src="<%=path %>/js/bootstrap.min.js?v=3.3.6"></script>
@@ -189,11 +189,11 @@
 
 	<!-- 自定义js -->
 	<script src="<%=path %>/js/content.js?v=1.0.0"></script>
-	
+
 	<!-- 表单验证 -->
 	<script src="<%=path %>/js/plugins/validate/jquery.validate.min.js"></script>
 	<script src="<%=path %>/js/plugins/validate/messages_zh.min.js"></script>
-	
+
 	<!-- layer javascript -->
     <script src="js/plugins/layer/layer.min.js"></script>
 	<script>

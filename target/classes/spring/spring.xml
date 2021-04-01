@@ -16,7 +16,7 @@
 
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 
-	<context:component-scan base-package="edu.hebeu" />
+	<context:component-scan base-package="edu.tfswufe" />
 
 
 	<import resource="spring-datasource.xml" />
@@ -31,7 +31,7 @@
 		<!-- 配置 Mybatis 配置文件 -->
 		<property name="configLocation" value="classpath:mybatis-config.xml"/>
 		<!-- 配置包别名 -->
-		<property name="typeAliasesPackage" value="edu.hebeu.entity" />
+		<property name="typeAliasesPackage" value="edu.tfswufe.entity" />
 
 		<!-- 插件配置 -->
 		<property name="plugins">
@@ -69,7 +69,7 @@
 
 	<!-- Mapper接口所在包名，Spring会自动查找其下的Mapper -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="edu.hebeu.mapper" />
+		<property name="basePackage" value="edu.tfswufe.mapper" />
 	</bean>
 
 	<!-- 事务管理 -->

@@ -1,4 +1,4 @@
-<%@page import="edu.hebeu.entity.Employee" %>
+<%@page import="edu.tfswufe.entity.Employee" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 		 pageEncoding="UTF-8" %>
 <% String path = request.getContextPath(); %>
@@ -54,8 +54,8 @@
 		        <div class="row h-100 align-items-center">
 		            <div class="col-12">
 		                <div class="breadcumb-content">
-		                    <h3 class="breadcumb-title">News</h3>
-		                    <p>Lorem ipsum dolor sit amet, consectetuer</p>
+		                    <h3 class="breadcumb-title">登陆信息</h3>
+		                    <p>请选择您所属部门和职称级别</p>
 		                </div>
 		            </div>
 		        </div>

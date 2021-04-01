@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.*"%>
-<%@ page import="edu.hebeu.entity.*" %>
+<%@ page import="edu.tfswufe.entity.*" %>
 <% String path = request.getContextPath(); %>
-<%@page import="edu.hebeu.util.MTimeUtil"%>
+<%@page import="edu.tfswufe.util.MTimeUtil"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -116,7 +116,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- 全局js -->
 	<script src="<%=path %>/js/jquery.min.js?v=2.1.4"></script>
 	<script src="<%=path %>/js/bootstrap.min.js?v=3.3.6"></script>

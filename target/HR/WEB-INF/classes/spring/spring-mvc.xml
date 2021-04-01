@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
-	<context:component-scan base-package="edu.hebeu.controller" />
+	<context:component-scan base-package="edu.tfswufe.controller" />
 
 	<!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->
 	<bean id="jspViewResolver"

@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.*"%>
-<%@ page import="edu.hebeu.entity.*" %>
+<%@ page import="edu.tfswufe.entity.*" %>
 <%@ page import="com.baomidou.mybatisplus.plugins.Page" %>
-<%@page import="edu.hebeu.util.MTimeUtil"%>
+<%@page import="edu.tfswufe.util.MTimeUtil"%>
 <% String path = request.getContextPath(); %>
 <!DOCTYPE html>
 <html>
@@ -23,7 +23,7 @@
 		rel="stylesheet">
 	<link href="<%=path %>/css/animate.css" rel="stylesheet">
 	<link href="<%=path %>/css/style.css?v=4.1.0" rel="stylesheet">
-	
+
 	<link rel="stylesheet" type="text/css" href="<%=path %>/dist/sweetalert.css">
 </head>
 <body class="gray-bg">
@@ -105,7 +105,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- 全局js -->
 	<script src="<%=path %>/js/jquery.min.js?v=2.1.4"></script>
 	<script src="<%=path %>/js/bootstrap.min.js?v=3.3.6"></script>
@@ -120,7 +120,7 @@
 
  	<!-- layer javascript -->
     <script src="js/plugins/layer/layer.min.js"></script>
-    
+
 	<script type="text/javascript">
 	$(document).ready(function(){
 		  $("#update").click(function(){

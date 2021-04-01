@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.*"%>
-<%@ page import="edu.hebeu.entity.*" %>
-<%@ page import="edu.hebeu.util.MTimeUtil"%>
+<%@ page import="edu.tfswufe.entity.*" %>
+<%@ page import="edu.tfswufe.util.MTimeUtil"%>
 <% String path = request.getContextPath(); %>
 <!DOCTYPE html>
 <html>
@@ -85,9 +85,9 @@
 	<script>
         $(document).ready(function () {
             $('.dataTables-example').dataTable();
-            
+
             var oTable = $('#editable').dataTable();
-            
+
             oTable.$('td').editable('../example_ajax.php', {
                 "callback": function (sValue, y) {
                     var aPos = oTable.fnGetPosition(this);

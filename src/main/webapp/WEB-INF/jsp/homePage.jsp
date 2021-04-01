@@ -1,4 +1,4 @@
-<%@page import="edu.hebeu.entity.Employee" %>
+<%@page import="edu.tfswufe.entity.Employee" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <% String path = request.getContextPath(); %>
@@ -76,11 +76,9 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
                         <div class="hero-slides-content">
-                            <h2 data-animation="fadeInUp" data-delay="100ms">Medical Services that <br>You can Trust
-                                100%</h2>
-                            <h6 data-animation="fadeInUp" data-delay="400ms">Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit sed
-                                diam nonummy nibh euismod.</h6>
+                            <h2 data-animation="fadeInUp" data-delay="100ms">提供科学化、信息化管理</h2>
+                            <h6 data-animation="fadeInUp" data-delay="400ms">建立人事管理系统的最终目标是为管理部门提供
+                                一个涵盖各项人事管理活动的科学管理渠道。</h6>
                         </div>
                     </div>
                 </div>
@@ -93,11 +91,9 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
                         <div class="hero-slides-content">
-                            <h2 data-animation="fadeInUp" data-delay="100ms">Medical Services that <br>You can Trust
-                                100%</h2>
-                            <h6 data-animation="fadeInUp" data-delay="400ms">Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit sed
-                                diam nonummy nibh euismod.</h6>
+                            <h2 data-animation="fadeInUp" data-delay="100ms">提供科学化、信息化管理</h2>
+                            <h6 data-animation="fadeInUp" data-delay="400ms">建立人事管理系统的最终目标是为管理部门提供
+                                一个涵盖各项人事管理活动的科学管理渠道。</h6>
                         </div>
                     </div>
                 </div>
@@ -110,11 +106,9 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
                         <div class="hero-slides-content">
-                            <h2 data-animation="fadeInUp" data-delay="100ms">Medical Services that <br>You can Trust
-                                100%</h2>
-                            <h6 data-animation="fadeInUp" data-delay="400ms">Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit sed
-                                diam nonummy nibh euismod.</h6>
+                            <h2 data-animation="fadeInUp" data-delay="100ms">提供科学化、信息化管理</h2>
+                            <h6 data-animation="fadeInUp" data-delay="400ms">建立人事管理系统的最终目标是为管理部门提供
+                                一个涵盖各项人事管理活动的科学管理渠道。</h6>
                         </div>
                     </div>
                 </div>
